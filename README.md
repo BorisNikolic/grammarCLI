@@ -158,6 +158,28 @@ disabled_rules = []
 disabled_categories = []
 ```
 
+## System-Wide Hotkey (macOS)
+
+Fix grammar anywhere on your Mac with a keyboard shortcut — select text, press `Ctrl+Shift+G`, and it's corrected in place.
+
+Works in Terminal, VS Code, Cursor, Slack, Notes, and any other app.
+
+### Setup
+
+```bash
+cd grammarCLI
+./hammerspoon/install_hotkey.sh
+```
+
+This installs [Hammerspoon](https://www.hammerspoon.org/) (if needed) and configures the hotkey. You'll need to grant Accessibility permissions the first time (System Settings > Privacy & Security > Accessibility > Hammerspoon).
+
+### How it works
+
+1. Select text in any app
+2. Press `Ctrl+Shift+G`
+3. Selected text is replaced with the corrected version
+4. A macOS notification confirms the fix
+
 ## Running Tests
 
 ```bash
