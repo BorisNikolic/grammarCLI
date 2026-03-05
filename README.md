@@ -23,15 +23,31 @@ Terminal grammar checker with Grammarly-like UX. Colored inline annotations, cat
 ```bash
 git clone https://github.com/BorisNikolic/grammarCLI.git
 cd grammarCLI
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -e .
+./install.sh
+source ~/.zshrc
 ```
+
+This will:
+1. Find Python 3.11+ on your system
+2. Create a virtual environment and install dependencies
+3. Add a `grammarCLI` alias to your shell so it works globally
 
 Verify it works:
 
 ```bash
 echo "me and him went to the store" | grammarCLI check
+```
+
+### Manual installation
+
+If you prefer to manage the venv yourself:
+
+```bash
+git clone https://github.com/BorisNikolic/grammarCLI.git
+cd grammarCLI
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -e .
 ```
 
 ## Usage
