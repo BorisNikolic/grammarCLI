@@ -180,6 +180,14 @@ This installs [Hammerspoon](https://www.hammerspoon.org/) (if needed) and config
 3. Selected text is replaced with the corrected version
 4. A macOS notification confirms the fix
 
+### Uninstall
+
+```bash
+./hammerspoon/uninstall_hotkey.sh
+```
+
+This removes the hotkey and grammar.lua config. Hammerspoon itself stays installed — to fully remove it: `brew uninstall --cask hammerspoon`.
+
 ## Running Tests
 
 ```bash
